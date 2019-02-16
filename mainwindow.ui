@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>643</width>
+    <height>526</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLineEdit" name="searchLine">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>221</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+color:black;
+}</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="table">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>0</y>
+      <width>401</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableWidget
+{
+background-color: grey;
+}
+QAbstractTableModel{
+background-color: grey;
+color:black;
+background: grey;
+}
+</string>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::DoubleClicked</set>
+    </property>
+    <property name="rowCount">
+     <number>0</number>
+    </property>
+    <property name="columnCount">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkNumber">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>70</y>
+      <width>91</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>по номеру</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkSurname">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>100</y>
+      <width>101</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>по фамилии</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkDiller">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>160</y>
+      <width>111</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>по оператору</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkName">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>130</y>
+      <width>81</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>по имени</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="searchStart">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>190</y>
+      <width>80</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Найти</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="returnButton">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>190</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Отчистить</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>0</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ПОИСК</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>643</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Меню</string>
+    </property>
+    <addaction name="action_create"/>
+    <addaction name="action_open"/>
+    <addaction name="action_write"/>
+    <addaction name="action_concat"/>
+    <addaction name="separator"/>
+    <addaction name="action_about"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolBar{
+background-color:grey;
+color:grey;
+background:grey;
+}</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="separator"/>
+   <addaction name="action_add"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_create">
+   <property name="icon">
+    <iconset resource="recources.qrc">
+     <normaloff>:/icons/menu/create.jpg</normaloff>:/icons/menu/create.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Создать БД</string>
+   </property>
+  </action>
+  <action name="action_open">
+   <property name="icon">
+    <iconset resource="recources.qrc">
+     <normaloff>:/icons/menu/read.png</normaloff>:/icons/menu/read.png</iconset>
+   </property>
+   <property name="text">
+    <string>Открыть файл БД</string>
+   </property>
+  </action>
+  <action name="action_write">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="recources.qrc">
+     <normaloff>:/icons/menu/write.png</normaloff>:/icons/menu/write.png</iconset>
+   </property>
+   <property name="text">
+    <string>Записать файл БД</string>
+   </property>
+  </action>
+  <action name="action_concat">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="recources.qrc">
+     <normaloff>:/icons/menu/concat.png</normaloff>:/icons/menu/concat.png</iconset>
+   </property>
+   <property name="text">
+    <string>Объединить БД</string>
+   </property>
+  </action>
+  <action name="action_add">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="recources.qrc">
+     <normaloff>:/icons/menu/add.png</normaloff>:/icons/menu/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>Добавить запись</string>
+   </property>
+  </action>
+  <action name="action_about">
+   <property name="icon">
+    <iconset resource="recources.qrc">
+     <normaloff>:/icons/menu/about.jpg</normaloff>:/icons/menu/about.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="recources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

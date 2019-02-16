@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>menu/about.jpg</file>
+        <file>menu/add.png</file>
+        <file>menu/change.jpg</file>
+        <file>menu/concat.png</file>
+        <file>menu/create.jpg</file>
+        <file>menu/delete.png</file>
+        <file>menu/find.png</file>
+        <file>menu/read.png</file>
+        <file>menu/write.png</file>
+    </qresource>
+</RCC>
